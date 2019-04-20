@@ -4,23 +4,13 @@
 // REDUX
     import { connect } from 'react-redux'
 
+// COMPONENTS
+    import Smurf from './Smurf'
 // STYLED COMPONENTS
-    import styled from 'styled-components'
+    // import styled from 'styled-components'
 
 // -- *** START CODE *** -- //
 // -- *** START CODE *** -- //
-
-const Styled_div = styled.div`
-    display: flex;
-    justify-content: center
-    margin: 15px 0px;
-
-
-    .subDiv {
-        border: 1px solid black
-        width: 50%;
-    }
-`;
 
 class SmurfList extends Component {
     
@@ -29,17 +19,7 @@ class SmurfList extends Component {
             <div>
                 {this.props.smurfs.map( smurf => {
                     return (
-                        
-                            <Styled_div>
-                            
-                                <div className='subDiv'>
-                                    <h2>{smurf.name}</h2>
-                                    <h4>Age: {smurf.age}</h4>
-                                    <h4>Height: {smurf.height}</h4>
-                                </div>
-                            
-                            </Styled_div>
-                        
+                        <Smurf smurf={smurf} />
                     )
                 })}
             </div>

@@ -9,7 +9,6 @@
     export const SMURF_FETCH_SUCCESS = "SMURF_FETCH_SUCCESS"
     export const SMURF_FETCH_FAILURE = "SMURF_FETCH_FAILURE" 
 
-
 // START -> ACTION CREATOR 
     export const get_smurfs = () => {
         console.log('inside a_getSmurfs action creator')
