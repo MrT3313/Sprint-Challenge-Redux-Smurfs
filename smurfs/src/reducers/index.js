@@ -1,3 +1,16 @@
+// REDUX
+import { combineReducers } from 'redux'
+
+// REDUCERS
+  import { smurfs_reducer } from './r_smurfs'
+
+// -- *** START CODE *** -- //
+// -- *** START CODE *** -- //
+
+export const rootReducer = combineReducers({
+  smurfs_reducer
+})
+
 /*
   Be sure to import in all of the action types from `../actions`
 */
